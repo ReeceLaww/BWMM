@@ -11,6 +11,7 @@
   #welcome_to {
     font-family: "Rubik";
     color: #25A18E;
+    // color: white;
     grid-area: wt;
     font-size: 5rem;
     animation-delay: 0.3s;
@@ -19,6 +20,7 @@
   #bwm_machinery {
     font-family: "Rubik";
     color: #25A18E;
+    // color: white;
     grid-area: bwm;
     font-size: 4rem;
     animation-delay: 0.8s;
@@ -34,14 +36,98 @@
   }
 }
 
-footer {
-  grid-area: f;
-  background: yellow;
+//Ipad Pro
+@media only screen and (max-width: 1024px) {
+	.content {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 95px 75px 1fr 6fr 1fr;
+    grid-template-areas: ". wt wt wt wt wt wt . . . . ."
+                         ". . bwm bwm bwm bwm bwm bwm . . . ."
+                         ". . . . . . . . . . . ."
+                         ". p p p p p p . . . . ."
+                         "f f f f f f f f f f f f";
+
+    #welcome_to {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: wt;
+      font-size: 4rem;
+    }
+
+    #bwm_machinery {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: bwm;
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
+//Ipad
+@media only screen and (max-width: 768px) {
+	.content {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 95px 75px 1fr 6fr;
+    grid-template-areas: ". wt wt wt wt wt wt . . . . ."
+                         ". . bwm bwm bwm bwm bwm bwm bwm bwm bwm ."
+                         ". . . . . . . . . . . ."
+                         ". p p p p p p p p . . .";
 
-@media screen and (max-width: 480px) {
-    .content {
-      background: red;
+    #welcome_to {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: wt;
+      font-size: 4.3rem;
     }
+
+    #bwm_machinery {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: bwm;
+      font-size: 3.9rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//Iphone 8
+@media only screen and (max-width: 375px) {
+	.content {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 65px 25px 1fr 6fr;
+    grid-template-areas: ". . wt wt wt wt wt wt wt wt wt ."
+                         ". . bwm bwm bwm bwm bwm bwm bwm bwm bwm ."
+                         ". . . . . . . . . . . ."
+                         ". p p p p p p p p p p .";
+
+    #welcome_to {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: wt;
+      font-size: 3rem;
+    }
+
+    #bwm_machinery {
+      font-family: "Rubik";
+      color: #25A18E;
+      // color: white;
+      grid-area: bwm;
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
 }

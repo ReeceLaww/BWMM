@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar|Open+Sans|Oswald|Rubik');
+
 body {
 	.site {
 		display: grid;
@@ -14,7 +16,6 @@ body {
 			display: grid;
 			grid-template-columns: 1fr auto 2fr 7fr;
 			grid-template-areas: ". l . n";
-
 			nav {
 				grid-area: n;
 				display: grid;
@@ -68,5 +69,83 @@ body {
 	  background-position: center;
 	  width: 100%;
 	  grid-area: c;
+
+		footer {
+			grid-area: f;
+			display: grid;
+			width: 300px;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-template-areas: "s s s s";
+
+			.sponsors {
+				grid-area: s;
+			}
+		}
+	}
+}
+
+//Ipad Pro
+@media only screen and (max-width: 1024px) {
+	body {
+		.site {
+			header {
+				nav {
+					.link {
+						font-size: 1.9rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Ipad
+@media only screen and (max-width: 768px) {
+	body {
+		.site {
+			header {
+				nav {
+					.link {
+						font-size: 1.4rem;
+					}
+				}
+
+				a {
+					.logo {
+						max-width: 250px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Iphone 8
+@media only screen and (max-width: 768px) {
+	body {
+		.site {
+			header {
+				grid-area: h;
+				background: #587B7F;
+				display: grid;
+				grid-template-columns: 1fr auto 2fr 7fr;
+				grid-template-rows: 1fr 1fr;
+				grid-template-areas: ". l l ."
+														 "n n n n";
+				nav {
+					grid-area: n;
+					.link {
+						font-size: 1.3rem;
+					}
+				}
+
+				a {
+					.logo {
+						max-width: 250px;
+					}
+				}
+			}
+		}
 	}
 }

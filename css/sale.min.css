@@ -1,1 +1,1 @@
-.content{background:url(../assets/img/pics/bg/mountain.jpg) no-repeat}
+.content{background:url(../assets/img/pics/bg/tractorbg.jpeg) no-repeat;display:grid;grid-template-columns:repeat(12, 1fr);grid-template-rows:95px 75px 1fr 6fr;grid-template-areas:". . . fs fs . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ." ". . . . . . . . . . . ."}.content .forsale{font-family:"Kavivanar", cursive;grid-area:fs;font-size:4.5rem}
