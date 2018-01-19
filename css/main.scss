@@ -1,0 +1,47 @@
+.content {
+  background: url(../assets/img/pics/bg/claastractorbg2.jpg) no-repeat;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 95px 75px 1fr 6fr;
+  grid-template-areas: ". wt wt wt . . . . . . . ."
+                       ". . bwm bwm bwm bwm . . . . . ."
+                       ". . . . . . . . . . . ."
+                       ". p p p p p . . . . . .";
+
+  #welcome_to {
+    font-family: "Rubik";
+    color: #25A18E;
+    grid-area: wt;
+    font-size: 5rem;
+    animation-delay: 0.3s;
+  }
+
+  #bwm_machinery {
+    font-family: "Rubik";
+    color: #25A18E;
+    grid-area: bwm;
+    font-size: 4rem;
+    animation-delay: 0.8s;
+  }
+
+  p {
+    grid-area: p;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    animation-delay: 0.2s;
+  }
+}
+
+footer {
+  grid-area: f;
+  background: yellow;
+}
+
+
+@media screen and (max-width: 480px) {
+    .content {
+      background: red;
+    }
+}
